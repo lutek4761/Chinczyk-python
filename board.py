@@ -7,6 +7,10 @@ class Board:
         self.pawn_radius = 25
         self.fields = [Field(180, 60, self.pawn_color, self.pawn_radius),
                        Field(100, 60, self.pawn_color, self.pawn_radius)]
+        self.route1 = []
+        self.route2 = []
+        self.route3 = []
+        self.router = []
 
     def tick(self):
         for field in self.fields:
