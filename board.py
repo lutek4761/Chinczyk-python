@@ -10,7 +10,7 @@ class Board:
         self.route1 = []
         self.route2 = []
         self.route3 = []
-        self.router = []
+        self.route4 = []
 
     def tick(self):
         for field in self.fields:

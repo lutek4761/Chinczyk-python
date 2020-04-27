@@ -19,7 +19,7 @@ class Game:
         if mouse_clicked and self.guard:
             self.switch_to_next_player()
             self.guard = False
-        else:
+        elif not (mouse_clicked or self.guard):
             self.guard = True
 
     def switch_to_next_player(self):

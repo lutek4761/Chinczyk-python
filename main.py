@@ -9,7 +9,7 @@ import math
 pg.init()
 DISPLAY_WIDTH = 800
 DISPLAY_HEIGHT = 600
-FPS = 10
+FPS = 30
 delta = 0
 mouse_clicked = False
 
