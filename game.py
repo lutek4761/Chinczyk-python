@@ -1,4 +1,10 @@
 import pygame as pg
+import pygame.gfxdraw
+from pygame.locals import *
+from handler import *
+import sys
+import random
+import math
 from board import Board
 from player import Player
 
@@ -14,12 +20,12 @@ class Game:
     def render(self):
         self.board.render()
 
-    def tick(self, mouse_clicked):
+    def tick(self):
         self.board.tick()
-        if mouse_clicked and self.guard:
+        if Handler.mouse_clicked and self.guard:
             self.switch_to_next_player()
             self.guard = False
-        elif not (mouse_clicked or self.guard):
+        elif not (Handler.mouse_clicked or self.guard):
             self.guard = True
 
     def switch_to_next_player(self):
