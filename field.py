@@ -36,3 +36,6 @@ class Field:
             self.is_hovered = False
             return False
 
+    def set_color(self, field_color):
+        self.color = field_color
+

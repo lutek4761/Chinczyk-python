@@ -19,9 +19,13 @@ class Game:
 
     def render(self):
         self.board.render()
+        for player in self.players:
+            player.render()
 
     def tick(self):
         self.board.tick()
+        for player in self.players:
+            player.tick()
         if Handler.mouse_clicked and self.guard:
             self.switch_to_next_player()
             self.guard = False
