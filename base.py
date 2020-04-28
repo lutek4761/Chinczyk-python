@@ -18,3 +18,6 @@ class Base:
         pg.draw.circle(Handler.display, self.color, self.coords, 75)
         for field in self.fields:
             field.render()
+
+    def get_coords(self):
+        return self.coords
