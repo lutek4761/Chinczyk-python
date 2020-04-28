@@ -19,4 +19,4 @@ class Handler:
             else:
                 Handler.mouse_clicked = False
     # statyczne pole klasy, umozliwia latwy dostep do tej zmiennej wszystkim innym klasom, bo starczy wywolac
-    # Display.display i mamy oryginalna zmienna, na ktorej dzialamy.
+    # Handler.display i mamy oryginalna zmienna, na ktorej dzialamy.
