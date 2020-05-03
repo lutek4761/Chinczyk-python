@@ -1,10 +1,5 @@
-import pygame as pg
-import pygame.gfxdraw
-from pygame.locals import *
+
 from handler import *
-import sys
-import random
-import math
 from board import Board
 from player import Player
 

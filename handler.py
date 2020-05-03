@@ -1,4 +1,5 @@
 from game import *
+from pygame.locals import *
 import pygame as pg
 
 
