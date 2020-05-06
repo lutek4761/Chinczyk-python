@@ -7,6 +7,8 @@ class Handler:
     display = pg.display.set_mode((800, 800))
     mx, my = pg.mouse.get_pos()
     mouse_clicked = False
+    player_moved = False
+    dice_value = 0
 
     @staticmethod
     def event_handler():

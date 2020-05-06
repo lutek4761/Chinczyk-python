@@ -10,13 +10,11 @@ pg.init()
 pg.font.init()
 DISPLAY_WIDTH = 800
 DISPLAY_HEIGHT = 600
-FPS = 30
+FPS = 120
 delta = 0
-mouse_clicked = False
 
 game = Game(4)
 clock = pg.time.Clock()
-
 
 while True:
     delta += clock.tick()
